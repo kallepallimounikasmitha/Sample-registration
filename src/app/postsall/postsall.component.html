@@ -1,0 +1,23 @@
+
+<!--<p *ngFor="let d of po">{{d.title}}</p>-->
+<app-childpost *ngFor ="let post of po"[comingdata] = "post"></app-childpost>
+
+<h1>Registration form</h1>
+Title:<input [(ngModel)] = "title" ><br>
+Body:<input [(ngModel)]= "body" ><br>
+UserId:<input [(ngModel)] = "uId" ><br>
+Id:<input [(ngModel)] = "id" ><br>
+FirstName:<input [(ngModel)] = "fName" ><br>
+MiddleName:<input [(ngModel)] = "Mname"><br>
+LastName:<input  [(ngModel)] = "LName" ><br>
+Mail:<input  [(ngModel)]= "mail" ><br>
+PhoneNumber:<input  [(ngModel)] = "pNumber" ><br>
+Githubid:<input   [(ngModel)] = "gitid"><br>
+Linkedid:<input  [(ngModel)] = "linkedid" ><br>
+<button (click) ="createPost()" >Enter</button>
+<!-- <button (click) = "navigate()"> navigate</button> -->
+ 
+
+
+
+
